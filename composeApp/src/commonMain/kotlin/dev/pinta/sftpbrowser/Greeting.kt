@@ -1,9 +1,9 @@
 package dev.pinta.sftpbrowser
 
 class Greeting {
-    private val platform = getPlatform()
+    private val connection = getConnection()
 
     fun greet(): String {
-        return "Hello, ${platform.name}!"
+        return "Hello, ${connection.name}!"
     }
 }

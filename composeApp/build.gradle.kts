@@ -44,6 +44,8 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.sshd.core)
+            implementation(libs.sshd.sftp)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -61,6 +63,8 @@ kotlin {
         jvmMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
+            implementation(libs.sshd.core)
+            implementation(libs.sshd.sftp)
         }
     }
 }
